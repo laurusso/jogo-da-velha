@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Jogo da Velha</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>  
+    <h1>⭕Jogo da velha❌</h1>
+    <div id="forms-name">
+        <p>Insira os nomes dos dois jogadores para iniciar:</p>
+        <form name="myForm" action="" onsubmit="return validateForm()">
+            <label for="player1">Jogador 1:</label><input id="player1" name="player1" type="text" placeholder="insira o jogador 1..."><br>
+            <label for="player2">Jogador 2:</label><input id="player2" name="player2" type="text" placeholder="insira o jogador 1..."><br>
+            <input type="submit" value="Jogar">
+        </form>
+    </div>
+
+    <p id="player-names"></p>
+    <p id="end"></p>
+    <div class="gameFinish">
+        <button id="finish">Voltar à página inicial</button>
+    </div>
+    <div id="game"></div>
+    <script src="script.js"></script>    
+</body>
+</html>

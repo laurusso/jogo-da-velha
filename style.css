@@ -1,0 +1,85 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #d2b7e5;
+    font-family:'Courier New', Courier, monospace ;
+}
+
+h1 {
+    color: #fff;
+    background-color: #c05299;
+    border-radius: 10vh;
+    padding: 0.4rem;
+}
+
+#game {
+    width: 61vmin;
+    background-color: #c05299;
+    display: none;
+    justify-content: center;
+    grid-template-columns: repeat(3, 20vmin);
+    grid-template-rows: repeat(3, 20vmin);
+    gap: 1vmin;
+    margin-top: 2vh;
+}
+
+.box {
+    background-color: #d2b7e5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.img-game {
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+}
+
+.gameFinish {
+    display: flex;
+    flex-direction: row;
+    width: 10vw;
+}
+
+#finish {
+    display: none;
+    background-color: #47126b;
+    border-radius: 10vh;
+    color: #FFF;
+    transition: all ease 0.3s;
+}
+
+#finish:hover {
+    filter: brightness(1.2);
+    transition: all ease 0.3s;
+}
+
+#forms-name {
+    background-color: #dac3e8;
+    color: #47126b;
+    border-radius: 10vh;
+    padding: 2rem;
+}
+
+#forms-name input {
+    border-radius: 10vh;
+    outline: none;
+    background: none;
+    margin-bottom: 1vh;
+}
+
+#end {
+    display: none;
+    background-color: #b3e9c7;
+    border-radius: 10vh;
+    padding: 0.4rem;
+    color: #47126b;
+}
+
+
+
